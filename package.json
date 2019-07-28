@@ -1,0 +1,26 @@
+{
+  "name": "environment_ribbon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dist": "rm -rf dist; mkdir -p dist; cp src/manifest.json dist/manifest.json; cp -r assets dist/assets",
+    "build": "yarn dist; parcel build src/main.ts src/options.html",
+    "watch": "yarn dist; parcel watch src/main.ts src/options.html --no-hmr",
+    "package": "yarn build; rm environment_ribbon.zip; cd dist; zip -r ../environment_ribbon.zip ./*"
+  },
+  "author": "aki77",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.86",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "matcher": "^2.0.0"
+  }
+}

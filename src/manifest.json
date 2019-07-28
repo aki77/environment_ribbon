@@ -1,0 +1,21 @@
+{
+  "name": "Environment ribbon",
+  "version": "0.1",
+  "description": "Environment ribbon",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": ["storage"],
+  "icons": {
+    "16": "assets/logo16.png",
+    "48": "assets/logo48.png",
+    "128": "assets/logo128.png"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/primer/build/build.css" />
+  </head>
+  <body>
+    <div class="p-2">
+      <form id="form">
+        <dl class="form-group">
+          <dt><label for="example-textarea">Settings json</label></dt>
+          <dd>
+            <textarea
+              class="form-control"
+              rows="20"
+              id="textarea"
+              required
+            ></textarea>
+          </dd>
+        </dl>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-lg px-5">
+            Save
+          </button>
+        </div>
+      </form>
+      <div class="flash mt-3 d-none" id="flash"></div>
+    </div>
+    <datalist id="colors">
+      <option value="#d73a49"></option>
+      <option value="#ffd33d"></option>
+      <option value="#28a745"></option>
+      <option value="#0366d6"></option>
+      <option value="#6f42c1"></option>
+    </datalist>
+    <script src="options.ts"></script>
+  </body>
+</html>
