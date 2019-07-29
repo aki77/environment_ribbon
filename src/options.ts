@@ -23,8 +23,6 @@ const onSubmit = (event: Event) => {
 const form = document.querySelector('#form') as HTMLFormElement
 form.addEventListener('submit', onSubmit)
 
-chrome.storage.sync.get(['json'], (result) => {
-  if (result.json) {
-    (document.querySelector('#textarea') as HTMLTextAreaElement).value = result.json
-  }
+chrome.storage.sync.get({ json: '[]' }, ({ json }) => {
+  (document.querySelector('#textarea') as HTMLTextAreaElement).value = json
 })

@@ -1,6 +1,6 @@
 {
   "name": "Environment ribbon",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Environment ribbon",
   "manifest_version": 2,
   "content_scripts": [

@@ -1,6 +1,6 @@
 {
   "name": "environment_ribbon",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dist": "rm -rf dist; mkdir -p dist; cp src/manifest.json dist/manifest.json; cp -r assets dist/assets",

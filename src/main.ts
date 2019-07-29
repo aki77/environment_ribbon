@@ -51,7 +51,7 @@ const injectRibbon = ({ name, color }: { name: string; color: string }) => {
 }
 
 const main = () => {
-  chrome.storage.sync.get(['json'], ({ json }) => {
+  chrome.storage.sync.get({ json: '[]'}, ({ json }) => {
     if (!json) return
 
     const config = JSON.parse(json)
